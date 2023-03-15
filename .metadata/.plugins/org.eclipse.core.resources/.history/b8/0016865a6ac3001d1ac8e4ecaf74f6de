@@ -1,0 +1,60 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+	int numero = lerNumero();
+	System.out.println("O número lido foi: " + numero);
+	 
+	boolean ehPar = ehPar(numero);
+	boolean geraSequencia = geraSequencia(numero);
+	}
+	
+
+public static int lerNumero(){
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Digite um número inteiro: ");
+	int numero = scanner.nextInt();
+	return numero;
+}
+
+
+public static boolean ehPar(int numero) {
+	if (numero % 2 == 0) {
+		System.out.println("É par");
+        return true;
+    } else {
+    	System.out.println("Não é par");
+        return false;
+    }
+	
+}
+
+public static boolean geraSequencia(int numero) {
+	if (numero >= 100) {
+        return false;
+    } else {
+        for (int i = numero + 1; i <= 100; i++) {
+            System.out.println(i);
+        }
+        return true;
+    }
+}
+
+public static boolean geraSequenciaOmitindoImpares(int numero) {
+	if (numero >= 100) {
+        return false;
+    } else {
+        for (int i = numero + 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+        return true;
+    }
+}
+
+}
+
+

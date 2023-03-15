@@ -1,0 +1,18 @@
+package exercicios;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {}
+	
+	
+public static int lerNumero(){
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Digite um número inteiro: ");
+	int numero = scanner.nextInt();
+	return numero;
+}
+
+}
+
+
